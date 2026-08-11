@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Local research workspaces — reports, evidence, traces
+workspaces/
+.research-agent/
+
+# Local editor / assistant config — máy ai nấy dùng
+.claude/settings.local.json
+
+# Sân nháp cá nhân: bản thử, walking skeleton, output sinh ra.
+# Cố ý KHÔNG version — mọi thứ ở đây là loại dùng xong bỏ, thứ nào đáng giữ
+# thì đã được chuyển sang src/ hoặc docs/ rồi.
+scratch/
+
+# OS
+.DS_Store
+
+CLAUDE.md
+AGENTS.md
