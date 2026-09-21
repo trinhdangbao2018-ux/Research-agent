@@ -1,11 +1,11 @@
 [project]
 name = "research-agent"
 version = "0.1.0"
-requires-python = ">=3.11"          # cần asyncio.timeout
+requires-python = ">=3.11"          
 dependencies = ["pydantic>=2"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "pytest-asyncio>=0.24"]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "import-linter>=2"]
 
 [build-system]
 requires = ["hatchling"]
@@ -18,3 +18,7 @@ packages = ["src/research_agent"]
 pythonpath = ["src"]
 testpaths = ["tests"]
 asyncio_mode = "auto"
+
+[tool.importlinter]
+root_package = "research_agent"
+include_external_packages = true
